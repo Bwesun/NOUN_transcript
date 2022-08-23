@@ -1,0 +1,13 @@
+<?php 
+if(!isset($_SESSION['role'])){
+    echo "<script type='text/javascript'>
+    alert('Oops! You do not have access to this platform');
+    window.open('https://www.nou.edu.ng','_self');
+</script>";
+}
+?>
+<script>
+	document.addEventListener("contextmenu", function(event){
+	event.preventDefault();  
+	}, false);
+</script>
